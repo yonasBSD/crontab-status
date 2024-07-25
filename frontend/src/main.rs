@@ -88,7 +88,7 @@ fn App() -> impl IntoView {
                     match v {
                         ResponseStatus::Success(v) => {
                             view! {
-                                <h1>Status</h1>
+                                <img src="/icons/logo.png" width="100"/><h1>Status</h1>
                                 {
                                     v.into_iter().map(|n| view! {<Job name=n></Job>}).collect_view()
                                 }
